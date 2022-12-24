@@ -52,7 +52,7 @@ importers:
       style-loader: ^3.3.1
       vite-plugin-dts: ^1.7.1
     dependencies:
-      '@thomathings/module-ui-css': link:../css
+      '@thomathings/module-ui-css': 0.0.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -4481,6 +4481,10 @@ packages:
     dependencies:
       defer-to-connect: 2.0.1
     dev: true
+
+  /@thomathings/module-ui-css/0.0.1:
+    resolution: {integrity: sha512-aNE8URMASc5YOJCleslQpeOrRk90bsoFrlx0WOa0UJv4sxOXhkYjkGSs2u0MEDutlgmUBrR14OQE4OoqSLSFsg==}
+    dev: false
 
   /@tootallnate/once/2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
