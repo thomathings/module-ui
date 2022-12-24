@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# build
+pnpm build:css
+pnpm build:types
+
+# copy
+# find ./src -type f -name '*.module.d.ts' -exec cp {} ./dist \;
+
+# clean up
+find ./dist -type f -name '*.css.js' -delete

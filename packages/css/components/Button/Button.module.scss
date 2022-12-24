@@ -1,0 +1,16 @@
+.base {
+  background-color: black;
+  border: 1px solid black;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.text {
+  color: white;
+
+  &:hover {
+    color: black;
+  }
+}

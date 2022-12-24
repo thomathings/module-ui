@@ -1,0 +1,13 @@
+{
+  "name": "@module-ui/css",
+  "version": "0.0.0",
+  "description": "CSS for Module UI.",
+  "license": "MIT",
+  "scripts": {
+    "build": "scripts/build",
+    "build:css": "vite build",
+    "build:types": "typed-scss-modules src",
+    "watch": "run-p watch:*",
+    "watch:types": "typed-scss-modules src -w"
+  }
+}
