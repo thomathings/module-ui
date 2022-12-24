@@ -26,6 +26,10 @@ jobs:
           version: 7
           run_install: false
 
+      - name: Build
+        run: |
+          pnpm build
+
       # Configure Git
       - name: Git configuration
         run: |
