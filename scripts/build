@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# build
+pnpm --filter @thomathings/module-ui-css build
+pnpm --filter @thomathings/module-ui-react build
