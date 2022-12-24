@@ -44,7 +44,7 @@ importers:
       '@storybook/manager-webpack5': ^6.5.15
       '@storybook/preset-scss': ^1.0.3
       '@storybook/react': ^6.5.15
-      '@thomathings/module-ui-css': ^0.1.0
+      '@thomathings/module-ui-css': ^0.2.0
       css-loader: ^6.7.3
       react: ^18.2.0
       react-dom: ^18.2.0

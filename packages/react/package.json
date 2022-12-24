@@ -1,6 +1,6 @@
 {
   "name": "@thomathings/module-ui-react",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A implementation for Module UI using React.",
   "license": "MIT",
   "main": "dist/index.js",
@@ -20,7 +20,7 @@
     "test": "echo 'test'"
   },
   "dependencies": {
-    "@thomathings/module-ui-css": "^0.1.0",
+    "@thomathings/module-ui-css": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
