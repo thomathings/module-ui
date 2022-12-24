@@ -21,6 +21,7 @@
     "build:types": "pnpm generate:types",
     "generate": "run-p watch:*",
     "generate:types": "tcm components",
+    "release": "scripts/release",
     "test": "echo 'test'"
   }
 }

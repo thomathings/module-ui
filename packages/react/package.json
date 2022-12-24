@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider NODE_PATH=./node_modules start-storybook -p 12281 -c .storybook --ci",
     "build": "vite build",
+    "release": "scripts/release",
     "test": "echo 'test'"
   },
   "dependencies": {
