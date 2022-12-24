@@ -3,7 +3,9 @@ import glob from 'glob'
 
 function setEntryFiles() {
   const entries: Record<string,string> = {}
-  const paths = glob.sync(`${process.cwd()}/components/*`)
+  const paths = glob.sync(`${process.cwd()}/components/*`, {
+    ignore: ["**/*.module.css*", "**/*.css.js"]
+  })
   const names = paths.map((path) => {
     return path.split("components/")[1]
   })
@@ -22,7 +24,8 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: "dist",
+    emptyOutDir: false,
+    outDir: "components",
     lib: {
       name: "@module-ui/css",
       entry: setEntryFiles(),

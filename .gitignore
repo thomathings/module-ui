@@ -6,8 +6,10 @@
 # testing
 **/coverage
 
-# next
-**/.next
+# @thomathings/module-ui-css 
+**/*.module.css
+**/*.module.css.d.ts
+**/*.css.js
 
 # storybook
 **/storybook-static

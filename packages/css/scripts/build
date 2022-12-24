@@ -2,10 +2,9 @@
 
 # build
 pnpm build:css
-pnpm build:types
 
-# copy
-# find ./src -type f -name '*.module.d.ts' -exec cp {} ./dist \;
+# type declaration
+pnpm generate:types
 
 # clean up
-find ./dist -type f -name '*.css.js' -delete
+find ./components -type f -name '*.css.js' -delete

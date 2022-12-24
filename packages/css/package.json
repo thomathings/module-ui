@@ -4,15 +4,18 @@
   "description": "CSS for Module UI.",
   "license": "MIT",
   "files": [
-    "dist",
+    "components/*.module.css",
+    "components/*.module.css.d.ts",
     "../../LICENSE"
   ],
   "scripts": {
+    "dev": "run-p dev:*",
+    "dev:css": "vite build -w",
+    "dev:types": "pnpm generate:types -w",
     "build": "scripts/build",
     "build:css": "vite build",
-    "build:types": "typed-scss-modules src",
-    "watch": "run-p watch:*",
-    "watch:types": "typed-scss-modules src -w",
+    "generate": "run-p watch:*",
+    "generate:types": "tcm components",
     "test": "echo 'test'"
   }
 }
