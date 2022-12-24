@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "CSS for Module UI.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomathings/module-ui"
+  },
   "files": [
     "components/*.module.css",
     "components/*.module.css.d.ts",
@@ -14,6 +18,7 @@
     "dev:types": "pnpm generate:types -w",
     "build": "scripts/build",
     "build:css": "vite build",
+    "build:types": "pnpm generate:types",
     "generate": "run-p watch:*",
     "generate:types": "tcm components",
     "test": "echo 'test'"
