@@ -1,5 +1,5 @@
 {
-  "name": "@module-ui/react",
+  "name": "@thomathings/module-ui-react",
   "version": "0.0.0",
   "description": "A implementation for Module UI using React.",
   "license": "MIT",
