@@ -3,4 +3,4 @@
 # build
 pnpm build
 
-pnpm publish
+pnpm publish --patch
