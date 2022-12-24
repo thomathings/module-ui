@@ -1,5 +1,5 @@
 //import styles from '@module-ui/css/components/TextField/TextField.module.scss'
-import styles from '@module-ui/css/dist/TextField.module.css'
+import styles from '@thomathings/module-ui-css/dist/TextField.module.css'
 import { FC } from 'react'
 
 export type TextFieldProps = JSX.IntrinsicElements['input'] & {}

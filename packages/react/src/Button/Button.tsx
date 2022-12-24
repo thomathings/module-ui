@@ -1,4 +1,4 @@
-import styles from '@module-ui/css/components/Button/Button.module.scss'
+import styles from '@thomathings/module-ui-css/components/Button/Button.module.scss'
 //import styles from '@module-ui/css/dist/Button.module.css'
 import { FC } from 'react'
 
