@@ -1,6 +1,6 @@
 {
   "name": "@thomathings/module-ui-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A implementation for Module UI using React.",
   "license": "MIT",
   "main": "dist/index.js",
