@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# build
+pnpm build
+
+pnpm --filter @thomathings/module-ui-react add @thomathings/module-ui-css@latest

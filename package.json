@@ -6,7 +6,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "scripts/build"
+    "build": "scripts/build",
+    "release": "scripts/release"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
