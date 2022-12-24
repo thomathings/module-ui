@@ -3,4 +3,4 @@
 # build
 pnpm build
 
-pnpm np --no-cleanup
+pnpm np
