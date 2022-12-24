@@ -1,6 +1,6 @@
 {
   "name": "@thomathings/module-ui-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CSS for Module UI.",
   "license": "MIT",
   "repository": {
@@ -21,6 +21,7 @@
     "build:types": "pnpm generate:types",
     "generate": "run-p watch:*",
     "generate:types": "tcm components",
+    "release": "scripts/release",
     "test": "echo 'test'"
   }
 }

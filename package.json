@@ -5,9 +5,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "release": "scripts/release"
-  },
   "devDependencies": {
     "@types/glob": "^8.0.0",
     "@types/react": "^18.0.26",

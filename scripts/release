@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# build
-pnpm lerna run build
-
-pnpm lerna publish
