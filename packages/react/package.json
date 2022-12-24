@@ -15,7 +15,7 @@
     "test": "echo 'test'"
   },
   "dependencies": {
-    "@module-ui/css": "workspace:*",
+    "@thomathings/module-ui-css": "workspace:^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

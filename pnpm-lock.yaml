@@ -37,12 +37,12 @@ importers:
 
   packages/react:
     specifiers:
-      '@module-ui/css': workspace:*
       '@storybook/addon-essentials': ^6.5.15
       '@storybook/builder-webpack5': ^6.5.15
       '@storybook/manager-webpack5': ^6.5.15
       '@storybook/preset-scss': ^1.0.3
       '@storybook/react': ^6.5.15
+      '@thomathings/module-ui-css': workspace:^0.0.1
       css-loader: ^6.7.3
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -50,7 +50,7 @@ importers:
       style-loader: ^3.3.1
       vite-plugin-dts: ^1.7.1
     dependencies:
-      '@module-ui/css': link:../css
+      '@thomathings/module-ui-css': link:../css
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
