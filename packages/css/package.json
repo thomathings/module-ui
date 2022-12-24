@@ -12,6 +12,7 @@
     "build:css": "vite build",
     "build:types": "typed-scss-modules src",
     "watch": "run-p watch:*",
-    "watch:types": "typed-scss-modules src -w"
+    "watch:types": "typed-scss-modules src -w",
+    "test": "echo 'test'"
   }
 }
