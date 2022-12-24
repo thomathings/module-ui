@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "CSS for Module UI.",
   "license": "MIT",
+  "files": [
+    "dist",
+    "../../LICENSE"
+  ],
   "scripts": {
     "build": "scripts/build",
     "build:css": "vite build",
