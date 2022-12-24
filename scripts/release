@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # build
-pnpm lerna build
+pnpm lerna run build
 
 pnpm lerna publish

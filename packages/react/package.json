@@ -16,11 +16,10 @@
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider NODE_PATH=./node_modules start-storybook -p 12281 -c .storybook --ci",
     "build": "vite build",
-    "release": "scripts/release",
     "test": "echo 'test'"
   },
   "dependencies": {
-    "@thomathings/module-ui-css": "^0.1.0",
+    "@thomathings/module-ui-css": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
