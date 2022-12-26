@@ -1,9 +1,8 @@
-import styles from '@thomathings/module-ui-css/components/TextField.module.css'
-import { FC } from 'react'
+import styles from "@thomathings/module-ui-css/components/TextField.module.css";
+import { FC } from "react";
 
-export type TextFieldProps = JSX.IntrinsicElements['input'] & {}
+export type TextFieldProps = JSX.IntrinsicElements["input"] & {};
 
 export const TextField: FC<TextFieldProps> = (props) => {
-  return <input {...props} className={styles.base} />
-}
-
+  return <input {...props} className={styles.base} />;
+};

@@ -1,28 +1,28 @@
-import { composeStories } from '@storybook/testing-react'
-import { render } from '@testing-library/react'
-import * as stories from './Button.stories'
-import userEvent from '@testing-library/user-event'
+import { composeStories } from "@storybook/testing-react";
+import { render } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import * as stories from "./Button.stories";
 
-const { Preview, Something } = composeStories(stories)
+const { Preview, Something } = composeStories(stories);
 
-describe('Preview', () => {
-  it('Be visible', () => {
-    const { getByRole } = render(<Preview />)
-    const button = getByRole('button')
+describe("Preview", () => {
+  it("Be visible", () => {
+    const { getByRole } = render(<Preview />);
+    const button = getByRole("button");
 
-    expect(button).toBeVisible()
-  })
-})
+    expect(button).toBeVisible();
+  });
+});
 
 describe("Something", () => {
   it("Be clickable", async () => {
-    const onClick = jest.fn()
-    const { getByRole } = render(<Something onClick={onClick} />)
-    const button = getByRole('button')
+    const onClick = jest.fn();
+    const { getByRole } = render(<Something onClick={onClick} />);
+    const button = getByRole("button");
 
-    await userEvent.click(button)
+    await userEvent.click(button);
 
-    expect(onClick).toBeCalled()
-    expect(onClick).toBeCalledTimes(1)
-  })
-})
+    expect(onClick).toBeCalled();
+    expect(onClick).toBeCalledTimes(1);
+  });
+});

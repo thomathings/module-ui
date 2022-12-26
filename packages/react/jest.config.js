@@ -20,7 +20,7 @@ const config = {
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   "moduleNameMapper": {
-    "\\.(css|less|scss|sss|styl)$": "jest-css-modules"
+    "\\.(css|less|scss|sss|styl)$": "jest-css-modules",
   },
   transform: {
     "^.+\\.(t|j)sx?$": ["@swc/jest", { ...swcConfig }],
