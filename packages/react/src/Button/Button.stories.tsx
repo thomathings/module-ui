@@ -1,15 +1,23 @@
-import { Meta, Story } from '@storybook/react'
-import { Button, ButtonProps } from './Button'
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react'
+import { Button } from './Button'
 
-export default {
-  title: "Button",
+type Component = typeof Button
+type Story = ComponentStoryObj<Component>
+type Meta = ComponentMeta<Component>
+
+const meta: Meta = {
   component: Button
-} as Meta
+}
+export default meta
 
-export const Preview: Story = (props: ButtonProps) => {
-  return <Button {...props} />
+export const Preview: Story = {
+  args: {
+    children: 'preview'
+  }
 }
 
-Preview.args = {
-  children: "hello"
+export const Something: Story = {
+  args: {
+    children: 'something'
+  }
 }

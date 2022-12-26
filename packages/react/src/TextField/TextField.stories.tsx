@@ -1,11 +1,23 @@
-import { Meta, Story } from '@storybook/react'
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react'
 import { TextField, TextFieldProps } from './TextField'
 
-export default {
-  title: "TextField",
-  component: TextField
-} as Meta
+type Component = typeof TextField
+type Story = ComponentStoryObj<Component>
+type Meta = ComponentMeta<Component>
 
-export const Preview: Story = (props: TextFieldProps) => {
-  return <TextField {...props} />
+const meta: Meta = {
+  component: TextField
+}
+export default meta
+
+export const Preview: Story = {
+  args: {
+    value: "preview"
+  }
+}
+
+export const Something: Story = {
+  args: {
+    value: "Something"
+  }
 }

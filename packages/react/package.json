@@ -17,7 +17,7 @@
     "dev": "NODE_OPTIONS=--openssl-legacy-provider NODE_PATH=./node_modules start-storybook -p 12281 -c .storybook --ci",
     "build": "vite build",
     "release": "scripts/release",
-    "test": "echo 'test'"
+    "test": "jest --config jest.config.js"
   },
   "dependencies": {
     "@thomathings/module-ui-css": "^0.2.0",
@@ -29,6 +29,7 @@
     "@storybook/builder-webpack5": "^6.5.15",
     "@storybook/manager-webpack5": "^6.5.15",
     "@storybook/preset-scss": "^1.0.3",
+    "@storybook/testing-react": "^1.3.0",
     "@storybook/react": "^6.5.15",
     "css-loader": "^6.7.3",
     "sass-loader": "^13.2.0",
