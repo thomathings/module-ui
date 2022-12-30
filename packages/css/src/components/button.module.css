@@ -1,5 +1,7 @@
+@import "../vars/colors.css";
+
 .base {
-  background-color: black;
+  background-color: var(--myColor);
   border: 1px solid black;
 
   &:hover {
@@ -7,7 +9,7 @@
   }
 
   &:focus {
-    background-color: yellow;
+    background-color: var(--yellow);
   }
 }
 

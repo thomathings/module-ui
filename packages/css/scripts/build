@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # build
-pnpm build:css
+TARGET_PATH=components pnpm build:css
+TARGET_PATH=vars pnpm build:css
 
 # type declaration
 pnpm generate:types
 
 # clean up
-find ./components -type f -name '*.css.js' -delete
+find . -type f -name '*.css.js' -delete

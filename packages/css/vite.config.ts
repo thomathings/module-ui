@@ -1,16 +1,15 @@
 import glob from "glob";
 import { defineConfig } from "vite";
 
+const TARGET_PATH = process.env.TARGET_PATH;
+
 function setEntryFiles() {
   const entries: Record<string, string> = {};
-  const paths = glob.sync(`${process.cwd()}/components/*`, {
-    ignore: ["**/*.module.css*", "**/*.css.js"],
-  });
-  const names = paths.map((path) => {
-    return path.split("components/")[1];
-  });
-  names.forEach((name) => {
-    entries[`${name}.css`] = `${process.cwd()}/components/${name}/${name}.module.scss`;
+  const paths = glob.sync(`${process.cwd()}/src/${TARGET_PATH}/*.css`);
+  paths.forEach((path) => {
+    // ex. button, colors
+    const name = path.slice(path.lastIndexOf("/") + 1);
+    entries[name] = path;
   });
   return entries;
 }
@@ -24,11 +23,13 @@ export default defineConfig({
     },
   },
   build: {
-    emptyOutDir: false,
-    outDir: "components",
+    emptyOutDir: true,
+    outDir: `${TARGET_PATH}`,
     lib: {
       name: "@module-ui/css",
-      entry: setEntryFiles(),
+      entry: {
+        ...setEntryFiles(),
+      },
       formats: ["cjs"],
     },
     cssCodeSplit: true,

@@ -7,9 +7,9 @@
 **/coverage
 
 # @thomathings/module-ui-css 
-**/*.module.css
-**/*.module.css.d.ts
-**/*.css.js
+packages/css/components
+packages/css/vars
+packages/css/**/*.css.js
 
 # storybook
 **/storybook-static

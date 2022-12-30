@@ -8,19 +8,25 @@
     "url": "https://github.com/thomathings/module-ui"
   },
   "files": [
-    "components/*.module.css",
-    "components/*.module.css.d.ts",
+    "components",
+    "vars",
     "../../LICENSE"
   ],
   "scripts": {
     "dev": "run-p dev:*",
-    "dev:css": "vite build -w",
-    "dev:types": "pnpm generate:types -w",
+    "dev:css": "run-p dev:css:*",
+    "dev:css:components": "TARGET_PATH=components vite build -w",
+    "dev:css:vars": "TARGET_PATH=vars vite build -w",
+    "dev:types": "run-p dev:types:*",
+    "dev:types:components": "pnpm generate:types:components -w",
+    "dev:types:vars": "pnpm generate:types:vars -w",
     "build": "scripts/build",
     "build:css": "vite build",
     "build:types": "pnpm generate:types",
-    "generate": "run-p watch:*",
-    "generate:types": "tcm components",
+    "generate": "run-p generate:*",
+    "generate:types": "run-p generate:types:*",
+    "generate:types:components": "tcm components",
+    "generate:types:vars": "tcm vars",
     "release": "scripts/release",
     "test": "echo 'test'"
   }
